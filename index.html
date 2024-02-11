@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-gray-100">
+  <div class="max-w-screen-lg mx-auto">
+    <!-- Responsive grid -->
+    <div class="grid grid-cols-1 gap-4 p-4">
+
+      <div class="flex flex-col md:flex-row items-center bg-blue-700 p-4 shadow rounded justify-between">
+        <h2 class="text-lg font-medium text-white">
+          No.
+        </h2>
+        <h2 class="text-lg font-medium text-white">
+          Images
+        </h2>
+        <h2 class="text-lg font-medium text-white">
+          Link
+        </h2>
+        <h2 class="text-lg font-medium text-white">
+          Scene Detail
+        </h2>
+      </div>
+      
+      <!-- First item -->
+      <div class="flex flex-col md:flex-row items-center bg-white p-4 shadow rounded justify-between">
+        <span>
+          1
+        </span>
+        <img src="assets/BackCard.png" alt="Image 1" class=" w-24 h-30">
+        <!-- <div class="mt-2 text-lg font-semibold">I like GUMI</div> -->
+        <a href="your_link_1" class="mt-2 text-blue-500 hover:text-blue-700">YouTube</a>
+        <div class="text-gray-600">I like Yonezu Kenshi (HACHI)</div>
+      </div>
+
+      <!-- Second item -->
+      <div class="flex flex-col md:flex-row items-center bg-white p-4 shadow rounded justify-between">
+        <span>
+          2
+        </span>
+        <img src="assets/saimsee.png" alt="Image 2" class="w-24 h-24 ">
+        <!-- <div class="mt-2 text-lg font-semibold">I love MIKU</div> -->
+        <a href="your_link_2" class="mt-2 text-blue-500 hover:text-blue-700">YouTube</a>
+        <div class="text-gray-600">I like Yonezu Kenshi (HACHI)</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Form Section -->
+<div class="max-w-screen-lg mx-auto p-4">
+  <form action="your_server_endpoint" method="post">
+    <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+    <input type="email" id="email" name="email" class="mt-1 block w-full border px-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="name@example.com">
+
+    <label for="comments" class="block text-sm font-medium text-gray-700 mt-4">Comments</label>
+    <textarea id="comments" name="comments" rows="4" class="border p-2  mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="Your comments..."></textarea>
+
+    <button type="submit" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.js"></script>
+</body>
+</html>
